@@ -9,11 +9,15 @@ function rollDice() {
   var displayDice_2 = document.querySelectorAll("img")[1];
 
   if (randomDice_1 > randomDice_2) {
-    document.querySelector("span").innerHTML = 1;
+    document.querySelector(
+      "h3"
+    ).innerHTML = `<b class="huge"> Player ${1} is the boss`;
   } else if (randomDice_1 === randomDice_2) {
-    document.querySelector("h1").innerHTML = "Game is draw!";
+    document.querySelector("h3").innerHTML = `<b class="huge"> Game is draw`;
   } else {
-    document.querySelector("span").innerHTML = 2;
+    document.querySelector(
+      "h3"
+    ).innerHTML = `<b class="huge"> Player ${2} is the boss`;
   }
   displayDice_1.setAttribute("src", diceAtribute_1);
   displayDice_2.setAttribute("src", diceAtribute_2);
