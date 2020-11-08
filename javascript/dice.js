@@ -10,9 +10,11 @@ function rollDice() {
 
   if (randomDice_1 > randomDice_2) {
     document.querySelector("span").innerHTML = 1;
+  } else if (randomDice_1 === randomDice_2) {
+    document.querySelector("h1").innerHTML = "Game is draw!";
   } else {
     document.querySelector("span").innerHTML = 2;
-  } 
-   displayDice_1.setAttribute("src", diceAtribute_1);
-   displayDice_2.setAttribute("src", diceAtribute_2);
+  }
+  displayDice_1.setAttribute("src", diceAtribute_1);
+  displayDice_2.setAttribute("src", diceAtribute_2);
 }
